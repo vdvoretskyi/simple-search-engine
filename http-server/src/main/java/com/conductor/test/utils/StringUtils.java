@@ -10,7 +10,7 @@ public final class StringUtils {
 
     public static List<String> splitByWords(final String text) {
         Objects.requireNonNull(text);
-        return Arrays.asList(text.split(WORD_SPLIT_REGEX));
+        return Arrays.asList(text.trim().split(WORD_SPLIT_REGEX));
     }
     private static final String WORD_SPLIT_REGEX = "\\s+";
 

@@ -35,7 +35,7 @@ class DocumentTest {
         document = new Document("word1 word2");
         assertThat(document.getSetOfDistinctWords(), containsInAnyOrder("word1", "word2"));
 
-        document = new Document("word1 \n\r word2");
+        document = new Document("word1 \r\n word2");
         assertThat(document.getSetOfDistinctWords(), containsInAnyOrder("word1", "word2"));
 
         document = new Document("word1 word2 word1");
