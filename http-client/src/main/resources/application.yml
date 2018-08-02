@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: test-http-client
+  shell:
+    command:
+      stacktrace:
+        enabled: true
+logging:
+  level:
+    ROOT: INFO
+search:
+  engine:
+    url: http://localhost:8080
